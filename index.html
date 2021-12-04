@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <script defer src="main.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="tip-calculator">
+        <h2>SPLI<br />TTER</h2>
+
+        <div class="body-calculator">
+          <!-- COL-1 -->
+          <div class="col-1 inputs">
+            <div class="bill-input">
+              <div class="bill-text">
+                <label for="bill">bill</label>
+                <span>*bill cannot be empty</span>
+              </div>
+              <div class="dolar">
+                <div></div>
+                <img src="images/icon-dollar.svg" alt="" />
+                <input type="text" name="bill" id="bill" placeholder="0" />
+              </div>
+            </div>
+
+            <div>
+              <label for="tip">Select tip %</label>
+              <div class="percents">
+                <input type="button" value="5%" />
+                <input type="button" value="10%" />
+                <input type="button" value="15%" />
+                <input type="button" value="25%" />
+                <input type="button" value="50%" />
+                <input
+                  id="custom"
+                  name="custom"
+                  type="text"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="people-number">Number of People</label>
+              <div class="people">
+                <div></div>
+                <img src="images/icon-person.svg" alt="" />
+                <input
+                  type="text"
+                  value="1"
+                  placeholder="1"
+                  id="people-number"
+                  name="people-number"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- COL-2 -->
+          <div class="col-2">
+            <div class="outputs">
+              <div class="output output-1">
+                <div>
+                  <p>Tip Amount</p>
+                  <p>/ person</p>
+                </div>
+                <span>$0.00</span>
+              </div>
+
+              <div class="output output-2">
+                <div>
+                  <p>Total</p>
+                  <p>/ person</p>
+                </div>
+                <span>$0.00</span>
+              </div>
+            </div>
+            <a class="reset" href="#">RESET</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
