@@ -1,9 +1,9 @@
 # Avoid accidental upload of the Sketch and Figma design files
 #####################################################
 
-.vcode
+.vscode/
 README-template.md
-style-guide.css
+style-guide.md
 ## Please do not remove lines 5 and 6 - thanks! 🙂 ##
 #####################################################
 *.sketch
